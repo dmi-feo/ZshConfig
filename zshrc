@@ -39,10 +39,6 @@ fi
 
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:~/.local/bin:~/bin
 
-if [ -d "$HOME/.virtualenvs" ] ; then
-	export WORKON_HOME=$HOME/.virtualenvs
-	source /usr/local/bin/virtualenvwrapper.sh
-fi
 
 CONFIGHOST="$HOME/.zsh.d/`hostname`"
 if [ -d $CONFIGHOST ] ; then
@@ -51,11 +47,10 @@ if [ -d $CONFIGHOST ] ; then
 fi
 
 export LANG=en_US.UTF-8
-export WORKON_HOME=~/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
 
 alias grep="/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
 
 autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
+
