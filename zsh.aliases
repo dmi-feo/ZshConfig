@@ -1,4 +1,4 @@
-alias grep='grep --color=auto'
+alias grep='egrep'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 

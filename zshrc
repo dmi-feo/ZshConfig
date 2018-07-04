@@ -48,9 +48,7 @@ fi
 
 export LANG=en_US.UTF-8
 
-alias grep="/bin/grep $GREP_OPTIONS"
-unset GREP_OPTIONS
-
 autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
 
+export PATH="/usr/local/opt/curl/bin:$PATH"
