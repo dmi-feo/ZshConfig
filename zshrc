@@ -14,6 +14,9 @@ setopt CORRECT_ALL
 
 ZSH_THEME="ys"
 
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
+
 if [[ $TERM == "xterm" || $TERM == "screen" ]]
 then
 	export TERM="xterm-256color"
@@ -47,9 +50,6 @@ if [ -d $CONFIGHOST ] ; then
 fi
 
 export LANG=en_US.UTF-8
-
-autoload -U +X compinit && compinit
-autoload -U +X bashcompinit && bashcompinit
 
 export PATH="/usr/local/opt/curl/bin:$PATH"
 export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
