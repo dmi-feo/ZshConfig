@@ -52,3 +52,9 @@ autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
 
 export PATH="/usr/local/opt/curl/bin:$PATH"
+export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+
+# The next line updates PATH for Yandex Cloud CLI.
+if [ -f '/Users/dmifedorov/yandex-cloud/path.bash.inc' ]; then source '/Users/dmifedorov/yandex-cloud/path.bash.inc'; fi
+
